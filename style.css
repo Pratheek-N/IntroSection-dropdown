@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 41%);
+}
+li {
+  list-style: none;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: auto;
+  height: 4rem;
+}
+.navbar > ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.left-nav {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.left-nav > li {
+  text-align: center;
+}
+.left-nav > li > img {
+  width: 5rem;
+  padding-top: 10px;
+}
+.left-nav > li > span {
+  padding-left: 8px;
+}
+.features-dropdown {
+  position: absolute;
+  padding: 10px 0px 10px 20px;
+  text-align: left;
+  border-radius: 10px;
+  background-color: white;
+  width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin: 15px -50px;
+}
+.features-dropdown a {
+  color: hsl(0, 0%, 41%);
+  padding: 10px 0px 5px 0px;
+  text-decoration: none;
+  display: block;
+}
+.company-dropdown {
+  border-radius: 10px;
+  position: absolute;
+  padding: 10px 0px 10px 20px;
+  text-align: left;
+  background-color: white;
+  width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin: 15px -25px;
+  z-index: 1;
+}
+
+.company-dropdown a {
+  color: hsl(0, 0%, 41%);
+  padding: 10px 0px 5px 0px;
+
+  text-decoration: none;
+  display: block;
+}
+.right-nav {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+}
+.right-nav > li {
+  height: 50%;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.right-nav > li:nth-of-type(2) {
+  outline: 2px solid hsl(0, 0%, 41%);
+}
+.right-nav > li:nth-of-type(2):hover {
+  outline: 2px solid hsl(0, 0%, 8%);
+}
+li:nth-of-type(1):hover,
+li:nth-of-type(2):hover,
+li:nth-of-type(3):hover,
+li:nth-of-type(4):hover,
+li:nth-of-type(5):hover {
+  color: hsl(0, 0%, 8%);
+}
+
+a:hover {
+  color: hsl(0, 0%, 8%);
+}
+.features-dropdown > a > span {
+  padding-right: 8px;
+  margin-top: 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.main {
+  display: flex;
+  width: 90%;
+}
+.leftMain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leftMain div {
+  width: 70%;
+}
+.rightMain {
+  display: flex;
+}
+.rightMain img {
+  width: 75%;
+}
+.heading {
+  color: hsl(0, 0%, 8%);
+  font-size: 4.8rem;
+  line-height: 1;
+  font-weight: 700;
+  width: 28rem;
+  margin-top: 100px;
+}
+.paragraph {
+  padding: 40px 0;
+  width: 25rem;
+  font-weight: 700;
+  line-height: 25px;
+}
+.learn-more {
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 8%);
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.learn-more:hover {
+  background-color: transparent;
+  border: solid hsl(0, 0%, 8%) 1px;
+  color: hsl(0, 0%, 8%);
+  font-weight: 700;
+  transition: 400ms;
+}
+.logos {
+  display: flex;
+  margin-top: 60px;
+}
+.logos li {
+  padding-right: 30px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    display: none;
+  }
+}
